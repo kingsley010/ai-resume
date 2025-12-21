@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="399c7447-5034-4e83-84ab-0273ad1e97a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rag/RagApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rag/RagApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rag/ResumeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rag/controller/KnowledgeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rag/controller/ResumeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rag/model/DocumentChunk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rag/service/DocumentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rag/service/EmbeddingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rag/service/RagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/rag/service/AiResumeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/rag/service/VectorStore.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,14 +30,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="37430PpLnNlufS69tzcwbIa2x6m" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,18 +54,28 @@
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.RagApplication.executor": "Debug",
+    "Spring Boot.ResumeApplication.executor": "Debug",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/admin/Downloads/Zm-PROJECTS/Projects/ai-resume",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/admin/Downloads/Zm-PROJECTS/Projects/ai-knowledge-base/src/main/java/org/example/Main.java",
+    "onboarding.tips.debug.path": "/Users/admin/Downloads/Zm-PROJECTS/Projects/ai-resume/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -66,9 +83,9 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RunManager">
-    <configuration name="RagApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="ai-knowledge-base" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.rag.RagApplication" />
+    <configuration name="ResumeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="rag" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.rag.ResumeApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.rag.*" />
@@ -81,11 +98,22 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.RagApplication" />
+        <item itemvalue="Spring Boot.ResumeApplication" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.29346.138" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="399c7447-5034-4e83-84ab-0273ad1e97a1" name="Changes" comment="" />
@@ -94,6 +122,9 @@
       <option name="presentableId" value="Default" />
       <updated>1766148293843</updated>
       <workItem from="1766148294914" duration="4449000" />
+      <workItem from="1766191710831" duration="3397000" />
+      <workItem from="1766219595262" duration="827000" />
+      <workItem from="1766220435837" duration="2664000" />
     </task>
     <servers />
   </component>
@@ -104,41 +135,34 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/rag/RagApplication.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/rag/ResumeApplication.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/rag/controller/KnowledgeController.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/rag/controller/ResumeController.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/rag/controller/KnowledgeController.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/rag/service/AiResumeService.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/rag/service/DocumentService.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/rag/service/EmbeddingService.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/rag/service/DocumentService.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/rag/service/AiResumeService.java</url>
           <line>21</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/rag/service/VectorStore.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>
