@@ -1,0 +1,42 @@
+server:
+  port: 3000
+
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/airesume
+#    username: postgres
+#    password: postgres
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+
+jwt:
+  secret: my-super-secret-key-which-is-at-least-32-characters
+  expiration-ms: 86400000
+
+rate-limit:
+  capacity: 20
+  duration: PT24H
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:airesume
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+openai:
+  api:
+    key: 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
