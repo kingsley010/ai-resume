@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="399c7447-5034-4e83-84ab-0273ad1e97a1" name="Changes" comment="(feature): backend">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/airesume/security/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/airesume/security/JwtTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/airesume/services/AiResumeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/airesume/services/AiResumeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="399c7447-5034-4e83-84ab-0273ad1e97a1" name="Changes" comment="(feature): refactor app config" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,7 +156,7 @@
       <workItem from="1766645546046" duration="3705000" />
       <workItem from="1766928581855" duration="19314000" />
       <workItem from="1767097685478" duration="594000" />
-      <workItem from="1767098310732" duration="1675000" />
+      <workItem from="1767098310732" duration="2064000" />
     </task>
     <task id="LOCAL-00001" summary="(feature): backend">
       <option name="closed" value="true" />
@@ -172,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767099220830</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="(feature): refactor app config">
+      <option name="closed" value="true" />
+      <created>1767100057111</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1767100057111</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +194,8 @@
   <component name="VcsManagerConfiguration">
     <option name="MARK_IGNORED_AS_EXCLUDED" value="true" />
     <MESSAGE value="(feature): backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="(feature): backend" />
+    <MESSAGE value="(feature): refactor app config" />
+    <option name="LAST_COMMIT_MESSAGE" value="(feature): refactor app config" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

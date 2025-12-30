@@ -40,3 +40,4 @@ build/
 ### env file ###
 backend/.env
 .env
+.env
