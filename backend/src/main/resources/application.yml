@@ -36,7 +36,3 @@ spring:
     console:
       enabled: true
       path: /h2-console
-
-openai:
-  api:
-    key: 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

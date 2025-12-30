@@ -1,9 +1,9 @@
 package com.example.airesume.security;
 
+import io.github.cdimascio.dotenv.Dotenv;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.security.Key;
@@ -15,12 +15,19 @@ public class JwtTokenProvider {
     private final Key key;
     private final long expirationMs;
 
-    public JwtTokenProvider(
-            @Value("${jwt.secret}") String secret,
-            @Value("${jwt.expiration-ms}") long expirationMs
-    ) {
+    // Inject the Dotenv bean created in AppConfig
+    public JwtTokenProvider(Dotenv dotenv) {
+        // Retrieve values from .env
+        String secret = dotenv.get("JWT_SECRET");
+        String expirationStr = dotenv.get("JWT_EXPIRATION_MS");
+
+        // Validation to prevent startup if security config is missing
+        if (secret == null || secret.length() < 32) {
+            throw new IllegalStateException("JWT_SECRET must be at least 32 characters long and present in .env");
+        }
+
         this.key = Keys.hmacShaKeyFor(secret.getBytes());
-        this.expirationMs = expirationMs;
+        this.expirationMs = (expirationStr != null) ? Long.parseLong(expirationStr) : 3600000; // Default 1 hour
     }
 
     public String generateToken(String subject) {

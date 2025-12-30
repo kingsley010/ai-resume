@@ -17,15 +17,11 @@ import java.net.http.HttpResponse;
 @Service
 public class AiResumeService {
 
-    private String apiKey;
+    private final String apiKey;
     private final HttpClient client = HttpClient.newHttpClient();
 
-    @PostConstruct
-    public void init() {
-        Dotenv dotenv = Dotenv.configure()
-                .load();
-
-        this.apiKey = dotenv.get("OPENAI_API_KEY");
+    public AiResumeService(String openaiApiKey) {
+        this.apiKey = openaiApiKey;
     }
 
     public ResumeResponse generateResume(ResumeRequest request) {
