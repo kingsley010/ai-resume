@@ -11,10 +11,6 @@ server:
 #      ddl-auto: update
 #    show-sql: true
 
-jwt:
-  secret: my-super-secret-key-which-is-at-least-32-characters
-  expiration-ms: 86400000
-
 rate-limit:
   capacity: 20
   duration: PT24H
